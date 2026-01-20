@@ -6,9 +6,6 @@ It allows users to add, edit, and delete tasks with data saved in localStorage.
 - Add, edit, and delete tasks - Task priority
 - Filter tasks - Data saved using localStorage
 
-# Tech Stack
-- HTML - CSS - JavaScript
-
 # Live Demo
 Will be added soon.
 
