@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app-container {
+    width: 75vw;
+    height: fit-content;
+    background: rgb(255 255 255);
+    padding: 25px;
+    margin: 0 0 12px 0;
+    border-radius: 20px;
+    box-shadow: 6px 6px 9px 0px #969595d9;
+}
+h1.head-text {
+    font-size: 30px;
+    color: #272752;
+    padding: 0 0 12px 0;
+}
+input.add-task-field {
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 6px 0px #c1c0c0;
+    border-radius: 10px;
+    border: 2px solid #9b9b9b8f;
+}
+.addtask-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px;
+}
+.priority-btn {
+    display: flex;
+    gap: 8px;
+}
+.priority-btn input[type='radio']{
+    display: none;
+}
+.priority-option:hover {
+  opacity: 0.9;
+
+}
+label.priority-option {
+    background: #bebebe;
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+#high:checked + label {
+  background: #ff6b6b;
+  color: white;
+}
+
+/* MEDIUM selected */
+#medium:checked + label {
+  background: #f4a261;
+  color: white;
+}
+
+/* LOW selected */
+#low:checked + label {
+  background: #6abf69;
+  color: white;
+}
+button.addbtn {
+    background: #558dbc;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 6px 18px;
+    border-radius: 9px;
+}
+button.save-edit {
+    background: #558dbc;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 6px 18px;
+    border-radius: 9px;
+}
+.filter {
+    width: fit-content;
+    background: #efefef;
+    font-size: 13px;
+    border: none;
+    padding: 4px 9px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filter-element {
+    width: fit-content;
+    background: white;
+    cursor: pointer;
+    padding: 5px 16px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 1px #c9c9c9;
+}
+p.option1 {
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid #dbdbdb;
+}
+p.option2 {
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid #dbdbdb;
+}
+p.option3 {
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid #dbdbdb;
+}
+p.clear-filter {
+    font-size: 14px;
+}
+.task-line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #ffffff;
+    margin: 12px;
+    padding: 5px;
+    gap: 9px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #e2e2e2;
+}
+.card-top {
+    padding: 25px 25px 5px 25px;
+    background: #f4f4f4;
+    border-radius: 20px 20px 0 0;
+}
+.card-bottom-part {
+    padding: 0px 25px 25px;
+}
+.taskbtncontainer {
+    display: flex;
+    gap: 5px;
+}
+.edit{
+    background: none;
+    border: none;
+}
+.delete{
+      background: none;
+    border: none;  
+}
+.bottom-card {
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    background: white;
+    padding: 5px 12px;
+    box-shadow: 0px 1px 3px 2px rgb(201, 201, 201);
+}
+.bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* mobile responsive */
+@media (max-width: 650px) {
+.addtask-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px;
+    flex-direction: column;
+}
+label.priority-option {
+    background: #bebebe;
+    padding: 2px 7px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+button.save-edit {
+    background: #558dbc;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 2px 6px;
+    border-radius: 9px;
+}
+button.addbtn {
+    background: #558dbc;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 2px 7px;
+    border-radius: 9px;
+}
+.taskbtncontainer {
+    display: flex;
+    gap: 3px;
+}
+img {
+    height: 20px;
+}
+
+}

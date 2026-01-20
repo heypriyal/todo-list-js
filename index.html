@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <!-- heading part -->
+    <div class="heading">
+        <h1 class="head-text">ToDo List</h1>
+    </div>
+    <div class="app-container">
+ <!-- add task part -->
+  <div class="card-top">
+    <div class="addtask-container">
+        <input type="text" class="add-task-field" placeholder="Add New Task">
+        <div class="addtask-btn">
+            <div class="priority-btn">
+                <input type="radio" name="Priority" id="high" value="high">
+                <label for="high" class="priority-option">High Priority</label>
+                <input type="radio" name="Priority" id="medium" value="medium">
+                <label for="medium" class="priority-option">Medium Priority</label>
+                <input type="radio" name="Priority" id="low" value="low">
+                <label for="low" class="priority-option">Low Priority</label>
+            </div>
+            <button class="addbtn">Add Task</button>
+            <button class="save-edit" onclick="saveUpdate()">Save update</button>
+            <p class="errormsg"></p>
+        </div>
+    </div>
+
+    <!-- filterbtn -->
+    <div class="filter">filterby Priority</div>
+    <div class="filter-element">
+        <p class="option1" onclick="filterData('high')">High</p>
+        <p class="option2" onclick="filterData('medium')">Medium</p>
+        <p class="option3" onclick="filterData('low')">Low</p>
+        <p class="clear-filter" onclick="showtasks()">Clear</p>
+    </div>
+</div> 
+    <!-- task-card part -->
+  <div class="card-bottom-part">   
+    <div class="allcontainer">
+
+        <div class="task-line">
+            <input type="checkbox" name="checkbox" id="1" class="task-checkbox">
+            <p class="text">task1</p>
+            <p class="show-priority">High</p>
+            <button class="edit"><img src="edit.svg" alt=""></button>
+            <button class="delete"><img src="dlt.svg" alt=""></button>
+        </div>
+        <div class="task-line">
+            <input type="checkbox" name="checkbox" id="2" class="task-checkbox">
+            <p class="text">task2</p>
+            <p class="show-priority">High</p>
+            <button class="edit"><img src="edit.svg" alt=""></button>
+            <button class="delete"><img src="dlt.svg" alt=""></button>
+        </div>
+
+    </div>
+
+    <!-- total task/ completed Task -->
+    <div class="bottom">
+        <div class="bottom-card">
+            <p class="box1-text">Total Task</p>
+            <p class="box1-num"></p>
+        </div>
+        <!-- <div class="bottom-card">
+            <p class="box2-text">completed task</p>
+            <p class="box2-num">4</p>
+        </div> -->
+    </div>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
