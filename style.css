@@ -110,6 +110,7 @@ button.save-edit {
     cursor: pointer;
     padding: 5px 16px;
     position: absolute;
+    display:none;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 1px #c9c9c9;
 }
@@ -223,5 +224,6 @@ button.addbtn {
 img {
     height: 20px;
 }
+
 
 }
