@@ -1,2 +1,14 @@
-# todo-list-js
-A to-do list app built with HTML, CSS, and JavaScript that supports add, edit, delete tasks and saves data in localStorage.
+# Todo List App
+A to-do list app built with HTML, CSS, and JavaScript.  
+It allows users to add, edit, and delete tasks with data saved in localStorage.
+
+# Features
+- Add, edit, and delete tasks - Task priority
+- Filter tasks - Data saved using localStorage
+
+# Tech Stack
+- HTML - CSS - JavaScript
+
+# Live Demo
+Will be added soon.
+
